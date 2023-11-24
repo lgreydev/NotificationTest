@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E061A882B11333200C7D214 /* SLGovernment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E061A872B11333200C7D214 /* SLGovernment.m */; };
 		5E6830D02B0F029A000577AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6830CF2B0F029A000577AA /* AppDelegate.m */; };
 		5E6830D32B0F029A000577AA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6830D22B0F029A000577AA /* SceneDelegate.m */; };
 		5E6830D62B0F029A000577AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6830D52B0F029A000577AA /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E061A862B11333200C7D214 /* SLGovernment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLGovernment.h; sourceTree = "<group>"; };
+		5E061A872B11333200C7D214 /* SLGovernment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLGovernment.m; sourceTree = "<group>"; };
 		5E6830CB2B0F029A000577AA /* NotificationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6830CE2B0F029A000577AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5E6830CF2B0F029A000577AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				5E6830DC2B0F029B000577AA /* LaunchScreen.storyboard */,
 				5E6830DF2B0F029B000577AA /* Info.plist */,
 				5E6830E02B0F029B000577AA /* main.m */,
+				5E061A862B11333200C7D214 /* SLGovernment.h */,
+				5E061A872B11333200C7D214 /* SLGovernment.m */,
 			);
 			path = NotificationTest;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E061A882B11333200C7D214 /* SLGovernment.m in Sources */,
 				5E6830D62B0F029A000577AA /* ViewController.m in Sources */,
 				5E6830D02B0F029A000577AA /* AppDelegate.m in Sources */,
 				5E6830E12B0F029B000577AA /* main.m in Sources */,

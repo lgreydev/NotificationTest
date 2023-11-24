@@ -6,8 +6,10 @@
 //
 
 #import "AppDelegate.h"
+#import "SLGovernment.h"
 
 @interface AppDelegate ()
+@property (strong, nonatomic) SLGovernment* government;
 
 @end
 
@@ -16,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSNotificationCenter* nCenter = [NSNotificationCenter defaultCenter];
+    
+    self.government = [[SLGovernment alloc] init];
+    
     return YES;
 }
 
