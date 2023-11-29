@@ -23,6 +23,11 @@
     
     self.government = [[SLGovernment alloc] init];
     
+    self.government.taxLevel = 5.5;
+    self.government.salary = 1100;
+    self.government.averagePrice = 15;
+    self.government.pension = 550;
+    
     return YES;
 }
 

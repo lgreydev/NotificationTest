@@ -13,9 +13,9 @@
 {
     self = [super init];
     if (self) {
-        self.taxLevel = 5;
+        self.taxLevel = 5.f;
         self.salary = 1000;
-        self.pesion = 500;
+        self.pension = 500;
         self.averagePrice = 10.f;
 
     }
