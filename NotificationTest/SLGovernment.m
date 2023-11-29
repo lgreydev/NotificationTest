@@ -7,12 +7,12 @@
 
 #import "SLGovernment.h"
 
-NSString* const SLGovernmentTaxLeveDidChangeNotification = @"SLGovernmentTaxLeveDidChangeNotification";
+NSString* const SLGovernmentTaxLevelDidChangeNotification = @"SLGovernmentTaxLevelDidChangeNotification";
 NSString* const SLGovernmentSalaryLeveDidChangeNotification = @"SLGovernmentSalaryLeveDidChangeNotification";
 NSString* const SLGovernmentPensionLeveDidChangeNotification = @"SLGovernmentPensionLeveDidChangeNotification";
 NSString* const SLGovernmentAveragePriceLeveDidChangeNotification = @"SLGovernmentAveragePriceLeveDidChangeNotification";
 
-NSString* const SLGovernmentTaxLeveDidChangeKey = @"SLGovernmentTaxLeveDidChangeKey";
+NSString* const SLGovernmentTaxLevelDidChangeKey = @"SLGovernmentTaxLevelDidChangeKey";
 NSString* const SLGovernmentSalaryLeveDidChangeKey = @"SLGovernmentSalaryLeveDidChangeKey";
 NSString* const SLGovernmentPensionLeveDidChangeKey = @"SLGovernmentPensionLeveDidChangeKey";
 NSString* const SLGovernmentAveragePriceLeveDidChangeKey = @"SLGovernmentAveragePriceLeveDidChangeKey";
@@ -33,17 +33,17 @@ NSString* const SLGovernmentAveragePriceLeveDidChangeKey = @"SLGovernmentAverage
 }
 
 - (void) taxLevel:(CGFloat)taxLevel {
-    _taxLevel = taxLevel;
+    self.taxLevel = taxLevel;
     
-    NSDictionary* dictionary = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:taxLevel] forKey:SLGovernmentTaxLeveDidChangeKey];
+    NSDictionary* dictionary = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:taxLevel] forKey:SLGovernmentTaxLevelDidChangeKey];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:SLGovernmentTaxLeveDidChangeNotification 
+    [[NSNotificationCenter defaultCenter] postNotificationName:SLGovernmentTaxLevelDidChangeNotification
                                                         object:nil
                                                       userInfo:dictionary];
 }
 
 - (void) salary:(CGFloat)salary {
-    _salary = salary;
+    self.salary = salary;
     
     NSDictionary* dictionary = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:salary] forKey:SLGovernmentSalaryLeveDidChangeKey];
     
@@ -53,7 +53,7 @@ NSString* const SLGovernmentAveragePriceLeveDidChangeKey = @"SLGovernmentAverage
 }
 
 - (void) pension:(CGFloat)pension {
-    _pension = pension;
+    self.pension = pension;
     
     NSDictionary* dictionary = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:pension] forKey:SLGovernmentPensionLeveDidChangeKey];
     
@@ -63,7 +63,7 @@ NSString* const SLGovernmentAveragePriceLeveDidChangeKey = @"SLGovernmentAverage
 }
 
 - (void) averagePrice:(CGFloat)averagePrice {
-    _averagePrice = averagePrice;
+    self.averagePrice = averagePrice;
     
     NSDictionary* dictionary = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:averagePrice] forKey:SLGovernmentAveragePriceLeveDidChangeKey];
     

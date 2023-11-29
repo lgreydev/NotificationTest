@@ -9,12 +9,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSString* const SLGovernmentTaxLeveDidChangeNotification;
+extern NSString* const SLGovernmentTaxLevelDidChangeNotification;
 extern NSString* const SLGovernmentSalaryLeveDidChangeNotification;
 extern NSString* const SLGovernmentPensionLeveDidChangeNotification;
 extern NSString* const SLGovernmentAveragePriceLeveDidChangeNotification;
 
-extern NSString* const SLGovernmentTaxLeveDidChangeKey;
+extern NSString* const SLGovernmentTaxLevelDidChangeKey;
 extern NSString* const SLGovernmentSalaryLeveDidChangeKey;
 extern NSString* const SLGovernmentPensionLeveDidChangeKey;
 extern NSString* const SLGovernmentAveragePriceLeveDidChangeKey;

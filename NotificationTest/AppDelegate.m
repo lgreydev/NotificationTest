@@ -15,11 +15,10 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSNotificationCenter* nCenter = [NSNotificationCenter defaultCenter];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(governmentNotification:) name:SLGovernmentTaxLevelDidChangeNotification object:nil];
     
     self.government = [[SLGovernment alloc] init];
     
@@ -28,13 +27,21 @@
     self.government.averagePrice = 15;
     self.government.pension = 550;
     
-    NSLog(@"%@", SLGovernmentTaxLeveDidChangeNotification);
-    
     return YES;
 }
 
 
 #pragma mark - UISceneSession lifecycle
+
+//- (void) governmentNotification:(NSNotification*)notification {
+//    NSLog(@"governmentNotification userInfo = %@", notification.userInfo);
+//}
+
+
+- (void) dealloc {
+//    [[NSNotificationCenter defaultCenter] removeObserver:self name:SLGovernmentTaxLeveDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
