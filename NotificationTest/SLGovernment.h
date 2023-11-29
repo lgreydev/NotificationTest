@@ -14,6 +14,11 @@ extern NSString* const SLGovernmentSalaryLeveDidChangeNotification;
 extern NSString* const SLGovernmentPensionLeveDidChangeNotification;
 extern NSString* const SLGovernmentAveragePriceLeveDidChangeNotification;
 
+extern NSString* const SLGovernmentTaxLeveDidChangeKey;
+extern NSString* const SLGovernmentSalaryLeveDidChangeKey;
+extern NSString* const SLGovernmentPensionLeveDidChangeKey;
+extern NSString* const SLGovernmentAveragePriceLeveDidChangeKey;
+
 @interface SLGovernment : NSObject
 
 @property (assign, nonatomic) CGFloat taxLevel;

@@ -28,6 +28,8 @@
     self.government.averagePrice = 15;
     self.government.pension = 550;
     
+    NSLog(@"%@", SLGovernmentTaxLeveDidChangeNotification);
+    
     return YES;
 }
 
